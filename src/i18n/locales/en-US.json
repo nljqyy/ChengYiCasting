@@ -1,0 +1,107 @@
+{
+    "nav": {
+        "home": "Home",
+        "about": "About Us",
+        "products": "Products",
+        "contact": "Contact"
+    },
+    "header": {
+        "welcome": "Welcome to {companyName} official website!",
+        "chinese": "中文",
+        "english": "EN",
+        "slogan": "Professional · Innovation · Excellence",
+        "qrCode": "QR Code"
+    },
+    "footer": {
+        "about": "About Us",
+        "companyIntro": "Company Introduction",
+        "companyCulture": "Corporate Culture",
+        "companyHistory": "Development History",
+        "products": "Products",
+        "contact": "Contact",
+        "copyright": "{companyName} © All Rights Reserved",
+        "roundCover": "Round Manhole Cover",
+        "squareCover": "Square Manhole Cover",
+        "grating": "Cast Iron Grate",
+        "customCasting": "Custom Casting"
+    },
+    "home": {
+        "productCategories": "Product Categories",
+        "productCategoriesDesc": "Round Cover, Square Cover, Cast Iron Grate, Custom Casting",
+        "about": "About Us",
+        "aboutDesc": "Professional Team, Excellent Craftsmanship, Pursuit of Excellence, Create Brilliant Future Together",
+        "factoryWorkshop": "Factory Workshop",
+        "companyIntro": "Company Introduction",
+        "teamAdvantage": "Team Advantage",
+        "teamHonor": "Team Honor",
+        "productShowcase": "Product Showcase",
+        "productShowcaseDesc": "Precision Craftsmanship, Superior Quality, Aesthetic and Durable, Long-Lasting",
+        "grate": "Grate"
+    },
+    "about": {
+        "companyIntro": "Handan Chengyi Metal Products Co., Ltd. is located in the manhole cover production base - Jize County Foundry Equipment Industrial Park, Handan City, Hebei Province. It is an enterprise integrating R&D, design, manufacturing, sales and after-sales service, specializing in the production of ductile iron manhole covers, ductile iron grates, trench covers and other products. Through continuous hard work and efforts, Chengyi Metal Products has achieved rapid development! The company has strong capital and technical strength, with qualified production and testing equipment. Relying on technical support and new product development capabilities, the company has a wide variety of products, complete supporting facilities and rich experience. All employees of the company fully follow the business philosophy of 'Quality First, Customer Supreme', and have won high praise from the industry and customers with excellent products, reasonable prices and thoughtful service. With strong comprehensive strength and excellent product quality, the company has won the support and trust of new and old customers across the country. Our purpose is to let every customer experience our sincere and trustworthy partnership like friends. We sincerely welcome customers from home and abroad to come and discuss cooperation with us.",
+        "mission": "Mission",
+        "missionDesc": "Customer-centric, continuous innovation, pursuit of excellence, creating value for society",
+        "vision": "Vision",
+        "visionDesc": "To become an industry-leading solution provider and build an internationally renowned brand",
+        "values": "Core Values",
+        "valuesDesc": "Integrity: Honest and trustworthy, words and deeds consistent\nInnovation: Courage to break through, pursuit of excellence\nCollaboration: Unity and mutual assistance, common growth\nWin-win: Mutual benefit, hand in hand development",
+        "team": "Team",
+        "culture": "Culture",
+        "teamAdvantage": "Team Advantage",
+        "teamAdvantageDesc": "Professional Team, Excellent Craftsmanship, Pursuit of Excellence, Create Brilliant Future Together",
+        "teamHonor": "Team Honor",
+        "teamHonorDesc": "Multiple Industry Certifications, Quality Assurance, Customer Trust"
+    },
+    "products": {
+        "categories": "Product Categories",
+        "categoriesDesc": "Round Cover, Square Cover, Cast Iron Grate, Custom Casting",
+        "backToCategories": "Back to Categories",
+        "noProducts": "No product images available, please place images in the corresponding folder",
+        "roundCover": "Round Manhole Cover",
+        "squareCover": "Square Manhole Cover",
+        "grating": "Cast Iron Grate",
+        "customCasting": "Custom Casting",
+        "product": "Product"
+    },
+    "services": {
+        "title": "Services",
+        "subtitle": "Comprehensive service guarantee, let you have no worries",
+        "contactUs": "Contact Us",
+        "service1": "Technical Consulting",
+        "service1Desc": "Professional technical consulting team provides comprehensive technical support and solutions",
+        "service2": "After-sales Support",
+        "service2Desc": "Comprehensive after-sales service system ensures stable operation of your system",
+        "service3": "Custom Development",
+        "service3Desc": "Provide customized development services according to your specific needs"
+    },
+    "contact": {
+        "title": "Contact Us",
+        "desc": "If you have any questions or cooperation intentions, please feel free to contact us",
+        "map": "Map Location",
+        "contactPerson": "Contact Person",
+        "generalManager": "General Manager",
+        "product": "Product",
+        "mainMarket": "Main Market",
+        "clickToEnlarge": "Click to Enlarge",
+        "businessCard": "Business Card",
+        "clickToView": "Click to View Details",
+        "businessCardDetail": "Business Card Detail",
+        "contactInfo": "Contact Information",
+        "address": "Address",
+        "phone": "Phone",
+        "whatsapp": "WhatsApp",
+        "email": "Email",
+        "location": "Location",
+        "businessCardFront": "Business Card Front",
+        "businessCardBack": "Business Card Back",
+        "front": "Front",
+        "back": "Back"
+    },
+    "banners": {
+        "home": {
+            "title": ["Manhole Covers & Gratings", "Professional Casting Solutions"],
+            "subtitle": ["Aesthetic · Anti-theft · Weather-resistant", "High Standard · High Strength · High Precision"]
+        }
+    }
+}

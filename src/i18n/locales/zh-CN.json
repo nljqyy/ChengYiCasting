@@ -1,0 +1,107 @@
+{
+    "nav": {
+        "home": "首页",
+        "about": "关于我们",
+        "products": "产品中心",
+        "contact": "联系我们"
+    },
+    "header": {
+        "welcome": "欢迎访问{companyName}官方网站！",
+        "chinese": "中文",
+        "english": "EN",
+        "slogan": "专业 · 创新 · 卓越",
+        "qrCode": "二维码"
+    },
+    "footer": {
+        "about": "关于我们",
+        "companyIntro": "公司介绍",
+        "companyCulture": "企业文化",
+        "companyHistory": "发展历程",
+        "products": "产品中心",
+        "contact": "联系我们",
+        "copyright": "{companyName} © 版权所有",
+        "roundCover": "圆井盖",
+        "squareCover": "方井盖",
+        "grating": "铸铁篦子",
+        "customCasting": "铸件定制"
+    },
+    "home": {
+        "productCategories": "产品分类",
+        "productCategoriesDesc": "圆井盖、方井盖、铸铁篦子、铸件定制",
+        "about": "关于我们",
+        "aboutDesc": "专业团队、工艺精湛、追求卓越、共创辉煌",
+        "factoryWorkshop": "工厂车间",
+        "companyIntro": "公司简介",
+        "teamAdvantage": "团队优势",
+        "teamHonor": "团队荣誉",
+        "productShowcase": "产品展示",
+        "productShowcaseDesc": "精工细作、品质上乘、美观耐用、持久如新",
+        "grate": "篦子"
+    },
+    "about": {
+        "companyIntro": "邯郸诚毅金属制品有限公司位于井盖生产基地 --河北省邯郸市鸡泽县铸造装备工业园区是一家集研发、设计、制造、销售及售后服务于一体，专业化生产球墨铸铁井盖、球墨铸铁篦子、沟盖板等的企业。诚毅金属制品通过不断的拼搏与努力，使企业得到了飞速发展！ 我公司企业资金，技术力量雄厚，具有合格的生产和检测设备，依靠技术支持和新产品开发能力，产品种类多，配套设置齐全，经验丰富。公司全体员工完全遵循“质量为先、客户至上”的经营理念，以优良的产品、合理的价格、周到的服务赢得了业内和广大用户的好评。 公司凭借强大的综合实力，过硬的产品质量赢得了全国各地新老用户的支持与信赖，我们的宗旨是；让每一位客户都体会到我们像朋友一样真诚的，可信赖的合作伙伴，竭诚欢迎国内外信赖客户前来与我们洽谈合作。",
+        "mission": "使命",
+        "missionDesc": "以客户为中心，持续创新，追求卓越，为社会创造价值",
+        "vision": "愿景",
+        "visionDesc": "成为行业领先的解决方案提供商，打造国际知名品牌",
+        "values": "价值观",
+        "valuesDesc": "诚信：诚实守信，言行一致\n创新：勇于突破，追求卓越\n协作：团结互助，共同成长\n共赢：互利互惠，携手发展",
+        "team": "团队",
+        "culture": "文化",
+        "teamAdvantage": "团队优势",
+        "teamAdvantageDesc": "专业团队、工艺精湛、追求卓越、共创辉煌",
+        "teamHonor": "团队荣誉",
+        "teamHonorDesc": "多项行业认证、品质保证、客户信赖"
+    },
+    "products": {
+        "categories": "产品分类",
+        "categoriesDesc": "圆井盖、方井盖、铸铁篦子、铸件定制",
+        "backToCategories": "返回产品分类",
+        "noProducts": "暂无产品图片，请将图片放入对应文件夹",
+        "roundCover": "圆井盖",
+        "squareCover": "方井盖",
+        "grating": "铸铁篦子",
+        "customCasting": "铸件定制",
+        "product": "产品"
+    },
+    "services": {
+        "title": "服务支持",
+        "subtitle": "全方位的服务保障，让您无后顾之忧",
+        "contactUs": "立即咨询",
+        "service1": "技术咨询",
+        "service1Desc": "专业的技术咨询团队，为您提供全方位的技术支持和解决方案",
+        "service2": "售后支持",
+        "service2Desc": "完善的售后服务体系，确保您的系统稳定运行",
+        "service3": "定制开发",
+        "service3Desc": "根据您的具体需求，提供定制化的开发服务"
+    },
+    "contact": {
+        "title": "联系我们",
+        "desc": "如有任何疑问或合作意向，请随时与我们联系",
+        "map": "地图位置",
+        "contactPerson": "联系人",
+        "generalManager": "总经理",
+        "product": "产品",
+        "mainMarket": "主要市场",
+        "clickToEnlarge": "点击放大",
+        "businessCard": "公司名片",
+        "clickToView": "点击查看详情",
+        "businessCardDetail": "名片详情",
+        "contactInfo": "联系信息",
+        "address": "地址",
+        "phone": "电话",
+        "whatsapp": "WhatsApp",
+        "email": "邮箱",
+        "location": "公司位置",
+        "businessCardFront": "名片正面",
+        "businessCardBack": "名片背面",
+        "front": "正面",
+        "back": "背面"
+    },
+    "banners": {
+        "home": {
+            "title": ["井盖与井篦子", "专业铸造品质保障"],
+            "subtitle": ["集研发、设计、制造、销售于一体", "诚毅金属值得信赖"]
+        }
+    }
+}

@@ -1,0 +1,34 @@
+{
+  "companyInfo": {
+    "nameCN": "邯郸诚毅金属制品有限公司",
+    "nameEN": "ChengYi Metal Products Co., Ltd. in Handan",
+    "sloganCN": "专业 · 创新 · 卓越",
+    "sloganEN": "Professional · Innovation · Excellence",
+    "descriptionCN": "专注于高品质产品研发与制造的高新技术企业",
+    "descriptionEN": "High-tech enterprise focusing on R&D and manufacturing of high-quality products",
+    
+    "contactInfo": {
+      "addressCN": "河北省邯郸市鸡泽县铸造装备工业园区88号",
+      "addressEN": "No. 88, Casting Equipment Industrial Park, Jize County, Handan City, Hebei Province",
+      "phone": "+86 15028041354",
+      "whatsapp": "+86 15028041354",
+      "wechat": "15028041354",
+      "email": "498221974@qq.com",
+      "website": "www.chengyicasting.com",
+      "qrCodeCN": "/assets/images/qr-code-cn.webp",
+      "qrCodeEN": "/assets/images/qr-code-en.webp"
+    },
+
+    "socialMedia": {
+      "wechat": "",
+      "weibo": "",
+      "linkedin": ""
+    }
+  },
+
+  "seoConfig": {
+    "title": "邯郸诚毅金属制品有限公司 - 专业、创新、卓越",
+    "keywords": "邯郸诚毅金属制品有限公司,企业官网,专业服务,产品中心",
+    "description": "邯郸诚毅金属制品有限公司官方网站，为您提供优质的产品和服务解决方案"
+  }
+}
