@@ -1,7 +1,22 @@
 import { createApp } from 'vue'
 import { createPinia } from 'pinia'
-import * as ElementPlusIconsVue from '@element-plus/icons-vue'
-import 'animate.css'
+
+import {
+  Phone,
+  Menu,
+  User,
+  Medal,
+  ArrowRight,
+  ArrowLeft,
+  Location,
+  Message,
+  CreditCard,
+  Link,
+  ChatDotRound,
+  Headset,
+  Setting
+} from '@element-plus/icons-vue'
+
 import App from './App.vue'
 import router from './router'
 import i18n from './i18n'
@@ -10,7 +25,23 @@ import { vLazy } from './directives/lazy'
 
 const app = createApp(App)
 
-for (const [key, component] of Object.entries(ElementPlusIconsVue)) {
+const icons = {
+  Phone,
+  Menu,
+  User,
+  Medal,
+  ArrowRight,
+  ArrowLeft,
+  Location,
+  Message,
+  CreditCard,
+  Link,
+  ChatDotRound,
+  Headset,
+  Setting
+}
+
+for (const [key, component] of Object.entries(icons)) {
   app.component(key, component)
 }
 

@@ -4,7 +4,7 @@ const routes = [
   {
     path: '/',
     name: 'Home',
-    component: () => import('@/views/Home.vue'),
+    component: () => import(/* webpackChunkName: "home" */ '@/views/Home.vue'),
     meta: {
       titleKey: 'nav.home'
     }
@@ -12,7 +12,7 @@ const routes = [
   {
     path: '/about',
     name: 'About',
-    component: () => import('@/views/About.vue'),
+    component: () => import(/* webpackChunkName: "about" */ '@/views/About.vue'),
     meta: {
       titleKey: 'nav.about'
     }
@@ -20,7 +20,7 @@ const routes = [
   {
     path: '/products',
     name: 'Products',
-    component: () => import('@/views/Products.vue'),
+    component: () => import(/* webpackChunkName: "products" */ '@/views/Products.vue'),
     meta: {
       titleKey: 'nav.products'
     }
@@ -28,7 +28,7 @@ const routes = [
   {
     path: '/contact',
     name: 'Contact',
-    component: () => import('@/views/Contact.vue'),
+    component: () => import(/* webpackChunkName: "contact" */ '@/views/Contact.vue'),
     meta: {
       titleKey: 'nav.contact'
     }

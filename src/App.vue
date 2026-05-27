@@ -48,9 +48,7 @@ function setPageTitle() {
 }
 
 onMounted(() => {
-  setTimeout(() => {
-    isLoading.value = false
-  }, 300)
+  isLoading.value = false
   
   setPageTitle()
   router.afterEach(() => {

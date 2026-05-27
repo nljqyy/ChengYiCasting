@@ -103,7 +103,7 @@
 </template>
 
 <script setup>
-import { ref, computed } from 'vue'
+import { ref, computed, onMounted } from 'vue'
 import { useI18n } from 'vue-i18n'
 import { useRouter } from 'vue-router'
 import { User, Medal, ArrowRight } from '@element-plus/icons-vue'
@@ -123,8 +123,9 @@ function goToProductCategory(product) {
   router.push({ path: '/products', query: { category: product.categoryId } })
 }
 
-// 动态加载categories目录下的所有webp图片
-const categoryImageModules = import.meta.glob('/public/assets/images/categories/*.webp', { eager: true })
+// 动态生成产品分类（懒加载）
+const categoryImageModules = import.meta.glob('/public/assets/images/categories/*.webp', { eager: false })
+const categoryImages = ref([])
 
 // 根据文件名获取分类信息
 function getCategoryInfo(filename) {
@@ -138,16 +139,14 @@ function getCategoryInfo(filename) {
   } else if (lowerName.includes('dingzhi')) {
     return { id: 'custom-casting', nameKey: 'products.customCasting' }
   }
-  // 默认返回圆井盖
   return { id: 'round-cover', nameKey: 'products.roundCover' }
 }
 
-// 动态生成产品分类
-const productCategories = computed(() => {
+// 异步加载分类图片
+onMounted(async () => {
   const categories = []
   
-  Object.keys(categoryImageModules).forEach((path) => {
-    // 从路径中提取文件名
+  for (const path in categoryImageModules) {
     const filename = path.split('/').pop().replace('.webp', '')
     const { id, nameKey } = getCategoryInfo(filename)
     
@@ -156,10 +155,12 @@ const productCategories = computed(() => {
       nameKey,
       image: `/assets/images/categories/${filename}.webp`,
     })
-  })
+  }
   
-  return categories
+  categoryImages.value = categories
 })
+
+const productCategories = computed(() => categoryImages.value)
 
 // 使用配置化的 showcase 图片（直接引用 products 目录，避免重复）
 const showcaseProducts = computed(() => getShowcaseImages())
