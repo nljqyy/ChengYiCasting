@@ -22,7 +22,7 @@
             @click="goToCategory(category)"
           >
             <div class="category-image">
-              <img :src="category.image" :alt="t(category.nameKey)" />
+              <img v-lazy="category.image" :alt="t(category.nameKey)" />
               <div class="category-badge" v-if="category.badge">
                 {{ category.badge }}
               </div>

@@ -18,7 +18,7 @@
             @click="selectCategory(category)"
           >
             <div class="category-image">
-              <img :src="category.image" :alt="t(category.nameKey)" />
+              <img v-lazy="category.image" :alt="t(category.nameKey)" />
               <div class="category-badge" v-if="category.badge">
                 {{ category.badge }}
               </div>
@@ -43,7 +43,7 @@
               :key="index"
             >
               <div class="product-image">
-                <img :src="product" :alt="`${t('products.product')}${index + 1}`" />
+                <img v-lazy="product" :alt="`${t('products.product')}${index + 1}`" />
               </div>
             </div>
           </div>
@@ -110,7 +110,7 @@ const selectedCategory = ref(null)
 const currentPage = ref(1)
 const pageSize = ref(12)
 
-const allProductImages = import.meta.glob('/public/assets/images/products/*/*.webp', { eager: true })
+const allProductImages = import.meta.glob('/public/assets/images/products/*/*.webp', { eager: false })
 
 onMounted(() => {
   const categoryId = route.query.category

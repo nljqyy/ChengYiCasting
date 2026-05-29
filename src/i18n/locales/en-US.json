@@ -67,17 +67,6 @@
         "customCasting": "Custom Casting",
         "product": "Product"
     },
-    "services": {
-        "title": "Services",
-        "subtitle": "Comprehensive service guarantee, let you have no worries",
-        "contactUs": "Contact Us",
-        "service1": "Technical Consulting",
-        "service1Desc": "Professional technical consulting team provides comprehensive technical support and solutions",
-        "service2": "After-sales Support",
-        "service2Desc": "Comprehensive after-sales service system ensures stable operation of your system",
-        "service3": "Custom Development",
-        "service3Desc": "Provide customized development services according to your specific needs"
-    },
     "contact": {
         "title": "Contact Us",
         "desc": "If you have any questions or cooperation intentions, please feel free to contact us",

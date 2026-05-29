@@ -77,10 +77,10 @@
             <div class="card-container">
               <div class="card-pair">
                 <div class="card-item">
-                  <img src="/assets/images/contact/mingpian2.webp" :alt="t('contact.businessCardFront')" class="card-image" />
+                  <img v-lazy="'/assets/images/contact/mingpian2.webp'" :alt="t('contact.businessCardFront')" class="card-image" />
                 </div>
                 <div class="card-item">
-                  <img src="/assets/images/contact/mingpian1.webp" :alt="t('contact.businessCardBack')" class="card-image" />
+                  <img v-lazy="'/assets/images/contact/mingpian1.webp'" :alt="t('contact.businessCardBack')" class="card-image" />
                 </div>
               </div>
             </div>
@@ -96,7 +96,7 @@
             <h4>{{ t('contact.location') }}</h4>
           </div>
           <div class="map-placeholder">
-            <img src="/assets/images/contact/map.webp" :alt="t('contact.map')" />
+            <img v-lazy="'/assets/images/contact/map.webp'" :alt="t('contact.map')" />
           </div>
         </div>
       </div>

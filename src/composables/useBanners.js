@@ -1,10 +1,9 @@
-import { ref } from 'vue'
+import { computed } from 'vue'
 import { useI18n } from 'vue-i18n'
 
 export function useBanners(pageType) {
   const { t, te, locale } = useI18n()
-  const banners = ref([])
-  
+
   const getTranslation = (key) => {
     if (te(key)) {
       const value = t(key)
@@ -12,11 +11,11 @@ export function useBanners(pageType) {
     }
     return ''
   }
-  
-  try {
+
+  const banners = computed(() => {
     const bannerConfigs = getBannerConfigs(pageType, locale.value)
-    
-    banners.value = bannerConfigs.map((config, index) => ({
+
+    return bannerConfigs.map((config, index) => ({
       image: config.image,
       title: getTranslation(`banners.${pageType}.title.${index}`),
       subtitle: getTranslation(`banners.${pageType}.subtitle.${index}`),
@@ -33,30 +32,8 @@ export function useBanners(pageType) {
       offsetTop: config.offsetTop || 60,
       offsetBottom: config.offsetBottom || 60
     }))
-    
-    console.log(`[轮播图] ${pageType} - 已配置 ${banners.value.length} 张图片`)
-    console.log('[轮播图] 图片路径:', banners.value.map(b => b.image))
-  } catch (error) {
-    console.error('加载轮播图失败:', error)
-    banners.value = [{
-      image: `/assets/images/banners/${pageType}-banner.svg`,
-      title: t(`banners.${pageType}.title.0`) || '',
-      subtitle: t(`banners.${pageType}.subtitle.0`) || '',
-      position: 'center',
-      titleSize: '48px',
-      subtitleSize: '20px',
-      titleColor: '#ffffff',
-      subtitleColor: '#ffffff',
-      titleLetterSpacing: '6px',
-      subtitleLetterSpacing: '3px',
-      overlayColor: 'rgba(0, 0, 0, 0.45)',
-      offsetLeft: 60,
-      offsetRight: 60,
-      offsetTop: 60,
-      offsetBottom: 60
-    }]
-  }
-  
+  })
+
   return { banners }
 }
 

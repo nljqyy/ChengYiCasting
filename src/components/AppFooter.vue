@@ -24,7 +24,7 @@
         <div class="footer-column contact-info">
           <h4>{{ t('footer.contact') }}</h4>
           <div class="qr-code">
-            <img :src="currentLanguage === 'zh-CN' ? qrCodeCN : qrCodeEN" :alt="t('header.qrCode')" />
+            <img v-lazy="currentLanguage === 'zh-CN' ? qrCodeCN : qrCodeEN" :alt="t('header.qrCode')" />
           </div>
           <div class="contact-details">
             <p><el-icon><Phone /></el-icon> {{ phone }}</p>

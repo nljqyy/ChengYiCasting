@@ -27,7 +27,7 @@
 
         <div class="contact-section">
           <div class="qr-code-box">
-            <img :src="currentLanguage === 'zh-CN' ? qrCodeCN : qrCodeEN" alt="二维码" class="qr-code-img" />
+            <img v-lazy="currentLanguage === 'zh-CN' ? qrCodeCN : qrCodeEN" alt="二维码" class="qr-code-img" />
           </div>
           <div class="phone-box">
             <el-icon :size="20"><Phone /></el-icon>
