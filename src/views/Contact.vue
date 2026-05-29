@@ -45,7 +45,7 @@
               
               <div class="info-item">
                 <div class="info-icon whatsapp-icon">
-                  <el-icon :size="20"><Message /></el-icon>
+                  <el-icon :size="20"><ChatDotRound /></el-icon>
                 </div>
                 <div class="info-content">
                   <span class="info-label">{{ t('contact.whatsapp') }}</span>
@@ -108,7 +108,7 @@
 import { computed } from 'vue'
 import { useI18n } from 'vue-i18n'
 import PageBanner from '@/components/PageBanner.vue'
-import { Location, Phone, Message, CreditCard } from '@element-plus/icons-vue'
+import { Location, Phone, Message, ChatDotRound, CreditCard } from '@element-plus/icons-vue'
 import companyConfig from '@/config/company.json'
 import { useBanners } from '@/composables/useBanners'
 

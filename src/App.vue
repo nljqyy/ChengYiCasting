@@ -3,7 +3,7 @@
     <!-- Loading 骨架屏 -->
     <div v-if="isLoading" class="loading-screen">
       <div class="loading-spinner"></div>
-      <p class="loading-text">Loading...</p>
+      <p class="loading-text">{{ t('app.loading') }}</p>
     </div>
     
     <template v-else>

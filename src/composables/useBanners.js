@@ -2,7 +2,7 @@ import { ref } from 'vue'
 import { useI18n } from 'vue-i18n'
 
 export function useBanners(pageType) {
-  const { t, te } = useI18n()
+  const { t, te, locale } = useI18n()
   const banners = ref([])
   
   const getTranslation = (key) => {
@@ -14,7 +14,7 @@ export function useBanners(pageType) {
   }
   
   try {
-    const bannerConfigs = getBannerConfigs(pageType)
+    const bannerConfigs = getBannerConfigs(pageType, locale.value)
     
     banners.value = bannerConfigs.map((config, index) => ({
       image: config.image,
@@ -60,9 +60,8 @@ export function useBanners(pageType) {
   return { banners }
 }
 
-function getBannerConfigs(type) {
-  const { locale } = useI18n()
-  const isEN = locale.value === 'en-US'
+function getBannerConfigs(type, currentLocale) {
+  const isEN = currentLocale === 'en-US'
   
   switch (type) {
     case 'home':

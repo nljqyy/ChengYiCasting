@@ -99,7 +99,6 @@ function closeMenu() {
 function changeLanguage() {
   const newLang = currentLanguage.value === 'zh-CN' ? 'en-US' : 'zh-CN'
   locale.value = newLang
-  currentLanguage.value = newLang
   appStore.setLanguage(newLang)
 }
 </script>

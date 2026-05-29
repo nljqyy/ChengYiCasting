@@ -110,10 +110,7 @@ const selectedCategory = ref(null)
 const currentPage = ref(1)
 const pageSize = ref(12)
 
-const productImages = import.meta.glob('/public/assets/images/products/*/*.webp', { eager: true })
-const productSvgImages = import.meta.glob('/public/assets/images/products/*/*.svg', { eager: true })
-
-const allProductImages = { ...productImages, ...productSvgImages }
+const allProductImages = import.meta.glob('/public/assets/images/products/*/*.webp', { eager: true })
 
 onMounted(() => {
   const categoryId = route.query.category

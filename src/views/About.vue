@@ -8,7 +8,7 @@
             <p>{{ t('about.companyIntro') }}</p>
           </div>
           <div class="intro-image animate__animated animate__fadeInRight">
-            <img src="/assets/images/about/changfangtu.webp" :alt="t('home.companyIntro')" />
+            <img v-lazy="'/assets/images/about/changfangtu.webp'" :alt="t('home.companyIntro')" />
           </div>
         </div>
       </div>
@@ -37,8 +37,8 @@
       <div class="container">
         <div class="culture-grid">
           <div class="culture-images">
-            <img src="/assets/images/about/changfangtu.webp" :alt="t('about.team')" class="culture-img-1" />
-            <img src="/assets/images/about/chejian-liushui.webp" :alt="t('about.culture')" class="culture-img-2" />
+            <img v-lazy="'/assets/images/about/changfangtu.webp'" :alt="t('about.team')" class="culture-img-1" />
+            <img v-lazy="'/assets/images/about/chejian-liushui.webp'" :alt="t('about.culture')" class="culture-img-2" />
           </div>
           <div class="culture-info">
             <h2>{{ t('about.teamAdvantage') }}</h2>
